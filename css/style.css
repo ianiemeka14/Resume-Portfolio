@@ -1,0 +1,390 @@
+:root{
+    --primary-font: 'Cabin', cursive;
+    --blue: #1f2833;
+    --white: #feffff;
+    --gray: #939393;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+a,a:hover,a:visited,a:active,a:link{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 10%;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    transition: 0.4s;
+    background-color: var(--blue);
+    overflow: hidden;
+    z-index: 99;
+}
+
+.logo{
+    cursor: pointer;
+    border: var(--white) 2px solid;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    text-align: center;
+    color: var(--white);
+    flex-basis: 50%;
+}
+
+
+#navlist{
+    list-style: none;
+}
+
+#navlist li{
+    display: inline-block;
+    padding: 0px 40px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.nav_item::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: var(--white);
+    transition: width .5s;
+}
+
+.nav_item:hover::after{
+    width: 100%;
+    transition:  width .5s;
+   
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.btn{
+	font-size: 30px;
+	background: none;
+	border: var(--blue) 1px solid;
+	text-decoration: none;
+	padding: 10px 40px;
+	z-index: 1;
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+	border-radius: 30px;
+}
+
+
+
+.btn1:hover{
+	
+	color: var(--white);
+}
+
+.btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+    background: var(--blue);
+	z-index: -1;
+	transition: 0.5s;
+	
+}
+
+.btn1::before{
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+	
+}
+
+
+.btn1:hover::before{
+	height: 180%;
+}
+
+.container{
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 210px;
+    gap: 35px;
+
+}
+
+.animation_img{
+    flex-basis: 40%;
+}
+
+.intro_text{
+   font-size: 40px;
+   color: var(--white);
+}
+
+.intro_text p{
+   display: block;
+}
+
+.intro_text span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.intro_text button{
+    font-size: 16px;
+    font-weight: bold;
+	background: var(--white);
+	border: var(--white) 1px solid;
+	text-decoration: none;
+	padding: 10px 40px;
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+	border-radius: 30px;
+    color: var(--blue);
+}
+
+.intro_text button:hover{
+    background: var(--blue);
+    color: var(--white);
+}
+
+.info_btn{
+    padding: 20px 0 0 0;
+}
+
+
+.cartoon{
+    max-width: 100%;
+    height: auto;  
+}
+
+
+h1{
+    font-size: 50px;
+    color: var(--blue);
+    text-align: center;
+    padding-top: 7%;
+}
+
+.cartoon2{
+    max-width: 100%;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 90px;
+}
+
+.animation1_img{
+    flex-basis: 25%;
+}
+.wrapper p{
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.8;
+    text-align: left;
+    font-weight: 400;
+    width: 100%;
+}
+
+.wrapper{
+    width: 400px;
+}
+
+.summary{
+    padding-bottom: 50px;
+}
+
+
+.skill{
+    margin-bottom: 35px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.skill > p{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue);
+    margin: 0;
+}
+
+.skill:before{
+    width: 100%;
+    height: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595 ;
+    bottom: 0;
+}
+
+.skill-bar{
+    width: 100%;
+    height: 10px;
+    background: var(--blue);
+    display: block;
+    position: relative;
+}
+
+.skill-bar span{
+    position: absolute;
+    top: -30px;
+    padding: 0;
+    font-size: 18px;
+    padding: 3px 0;
+    font-weight: 500;
+}
+
+.skill-bar{
+    position: relative;
+}
+
+.skill1 .skill-count1{
+    right: 0;
+}
+
+.skill1{
+    width: 80%;
+}
+
+.skill2 .skill-count2{
+    right: 0;
+}
+
+.skill2{
+    width: 80%;
+}
+
+.skill3 .skill-count3{
+    right: 0;
+}
+
+.skill3{
+    width: 60%;
+}
+
+.wrapper button{
+    font-size: 16px;
+    font-weight: bold;
+	background: var(--white);
+	border: var(--blue) 1px solid;
+	text-decoration: none;
+	padding: 10px 40px;
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+	border-radius: 30px;
+    color: var(--blue);
+}
+
+.wrapper button:hover{
+    background: var(--blue);
+    color: var(--white);
+}
+
+.resume{
+    padding-bottom: 70px;
+}
+
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    padding: 70px 0px 30px 0px;
+    font-size: 30px;
+    text-align: left;
+    color: var(--blue);
+}
+
+.wexp1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--blue);
+}
+
+.comp_name{
+    text-align: right;
+}
+
+.wexp2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--blue);
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+}
+.company{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    color: var(--gray);
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    
+}
+
+.loc_icon{
+    padding-left: 10px;
+}
+
+.position{
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+
+.post_title{
+    padding-bottom: 10px;
+}
+
+.edu1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.degree{
+    padding-bottom: 20px;
+}
+
+hr{
+    margin-top: 10px;
+    color: var(--blue);
+}
