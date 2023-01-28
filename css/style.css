@@ -331,8 +331,14 @@ h1{
     color: var(--blue);
 }
 
-.comp_name{
-    text-align: right;
+.comp_name:hover{
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.loc_name:hover{
+    cursor: pointer;
+    color: var(--blue);
 }
 
 .wexp2{
@@ -374,7 +380,7 @@ h1{
     padding-bottom: 10px;
 }
 
-.edu1{
+.edu{
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -387,4 +393,209 @@ h1{
 hr{
     margin-top: 10px;
     color: var(--blue);
+}
+
+.container4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    gap: 30px;
+}
+
+.projects{
+    background-color: #f8f9fa!important;
+    padding-bottom: 7%;
+}
+
+.project1{
+    position: relative;
+    width: 40%;
+}
+
+.project2{
+    position: relative;
+    width: 40%;
+}
+
+
+.project_img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+
+.project1:hover .overlay{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.project2:hover .overlay{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.git_link{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.form_container{
+    padding-top: 90px;
+    width: 30%;
+}
+
+
+label{
+    color: var(--gray);
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-bottom: var(--blue) 1px solid;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit]{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    color: var(--blue);
+    background-color: var(--white);
+    transition: .5s;
+}
+
+.container5 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding-bottom: 10%;
+}
+
+.contact_info{
+    cursor: pointer;
+    display: flex;
+    padding-bottom: 20px;
+    gap: 10px;
+    color: var(--gray)
+}
+
+.contact_info:hover{
+    color: var(--blue);
+}
+
+.contact_header{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+footer{
+    padding: 50px 0 50px 0;
+    background-color: var(--blue); 
+}
+
+footer h2{
+    color: var(--white);
+    padding-bottom: 20px;
+}
+
+.container6{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socials .summary{
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.8;
+    text-align: left;
+    font-weight: 400;
+}
+
+.about_summary{
+    width: 400px;
+}
+
+
+footer p{
+    display: flex;
+    padding-bottom: 20px;
+    color: var(--gray);
+}
+
+footer p:hover{
+    color: var(--white);
+}
+
+.socials p{
+    color: var(--white);
+    font-size: 18px;
+}
+
+.social_icon{
+   width: 30px;
+   text-align: left;
+   color: var(--white);
+   border-radius: 20px;
+   background-color: var(--gray);
+}
+
+.social_icon:hover{
+    background-color: var(--white);
+}
+
+footer li{
+    padding-bottom: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+footer li:hover{
+    color: var(--white);
+}
+
+footer .contact_info{
+    display: flex;
+    padding-bottom: 20px;
+    color: var(--gray);
+}
+
+footer .contact_info:hover{
+    color: var(--white);
+}
+
+.copyright{
+    text-align: center;
+    color: var(--gray);
+    padding-top: 70px;
 }
