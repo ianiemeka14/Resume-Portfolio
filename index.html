@@ -14,27 +14,27 @@
         <nav id="navbar">
             <a href="index.html"><h2 class="logo">IA</h2></a>   
             <ul id="navlist">
-                <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Bio</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Resume</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Projects</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+                <li class="nav_item"><a href="#container" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="#bio" class="nav_link">Bio</a></li>
+                <li class="nav_item"><a href="#resume" class="nav_link">Resume</a></li>
+                <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+                <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
             </ul>
             
         </nav>     
     </header>
-    <div class="container">
+    <div id="container">
         <div class="intro_text">
             <p>Hello, I'm</p>
             <span>Isaiah Aniemeka</span>
             <p>Junior Developer</p>
-            <button class="btn btn1"><a href="">Let's Talk</a></button>
+            <button class="btn btn1"><a href="#contact">Let's Talk</a></button>
         </div>
         <div class="animation_img">
             <img class="cartoon" src="/img/cartoon.png"/>
         </div>  
     </div>
-    <div class="bio">
+    <div id="bio">
         <h1>About Me</h1>
         <div class="container2">
             <div class="animation1_img">
@@ -72,14 +72,14 @@
                 </div>
 
                 <div class="info_btn">
-                    <button>Hire Me</button>
-                    <button>Download CV</button>
+                    <a href="mailto:isaiah.aniemeka@gmail.com"><button>Hire Me</button></a>
+                    <a href="/files/ANIEMEKA_RESUME.pdf" download="Resume"><button>Download CV</button></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="resume">
+    <div id="resume">
         <h1>Resume</h1>
         <div class="container3">
             <div>
@@ -193,7 +193,7 @@
         </div>
     </div>
 
-    <div class="projects">
+    <div id="projects">
         <h1>Projects</h1>
         <div class="container4">
             <div class="project1">
@@ -220,19 +220,19 @@
         </div>  
     </div>
 
-    <div class="contact">
+    <div id="contact">
         <h1>Contact Me</h1>
         <div class="container5">
             <div class="form_container">
-                <form>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname">
+                <form action="/php/message.php" method="POST">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email">
                     <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" style="height:170px"></textarea>
+                    <input type="text" id="subject" name="subject">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" style="height:170px"></textarea>
                     <input type="submit" value="Send Message"> 
                 </form>
             </div>
@@ -301,11 +301,11 @@
                     <div>
                         <span class="contact_info">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li ><a href="#">Bio</a></li>
-                                <li><a href="#">Resume</a></li>
-                                <li><a href="#">Projects</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#container" class="nav_link">Home</a></li>
+                                <li><a href="#bio" class="nav_link">Bio</a></li>
+                                <li><a href="#resume" class="nav_link">Resume</a></li>
+                                <li><a href="#projects" class="nav_link">Projects</a></li>
+                                <li><a href="#contact" class="nav_link">Contact</a></li>
                             </ul>
                         </span>       
                     </div>
@@ -357,7 +357,7 @@
                 </div>
             </div>
             <div class="copyright">
-                Copyright &copy;2023 All rights reserved | This website was made by Isaiah Aniemeka
+                Copyright &copy;2023 All rights reserved | This website was made by Isaiah C. Aniemeka
             </div>
     </footer>
 </body>

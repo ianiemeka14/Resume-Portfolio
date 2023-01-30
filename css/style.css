@@ -13,6 +13,10 @@
     font-family: var(--primary-font);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a,a:hover,a:visited,a:active,a:link{
     color: inherit;
     text-decoration: none;
@@ -120,14 +124,13 @@ nav{
 	height: 180%;
 }
 
-.container{
+#container{
     background-color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 210px;
-    gap: 35px;
-
+    gap: 35px;   
 }
 
 .animation_img{
@@ -177,6 +180,7 @@ nav{
     max-width: 100%;
     height: auto;  
 }
+
 
 
 h1{
@@ -307,7 +311,7 @@ h1{
     color: var(--white);
 }
 
-.resume{
+#resume{
     padding-bottom: 70px;
 }
 
@@ -403,7 +407,7 @@ hr{
     gap: 30px;
 }
 
-.projects{
+#projects{
     background-color: #f8f9fa!important;
     padding-bottom: 7%;
 }
@@ -472,11 +476,11 @@ label{
 
 input[type=text], textarea{
     width: 100%;
-    padding: 12px;
+    padding-bottom: 12px;
     border: none;
     outline: none;
     border-bottom: var(--blue) 1px solid;
-    margin-top: 6px;
+    margin-top: 20px;
     margin-bottom: 16px;
 }
 
@@ -586,7 +590,7 @@ footer li:hover{
 
 footer .contact_info{
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     color: var(--gray);
 }
 
