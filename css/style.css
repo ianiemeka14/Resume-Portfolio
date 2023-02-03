@@ -334,7 +334,8 @@ h1{
     justify-content: center;
 }
 
-.heading{
+
+.container3 .heading{
     padding: 70px 0px 30px 0px;
     font-size: 30px;
     text-align: left;
@@ -345,7 +346,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--blue);
+    
 }
 
 .comp_name:hover{
@@ -369,27 +370,23 @@ h1{
     display: flex;
     align-items: center;
     color: var(--gray);
+    gap: 5px;
+    padding-left: 5px;
 }
+
+
 .company{
     display: flex;
     align-items: center;
     padding-right: 40px;
+    gap: 5px;
     color: var(--gray);
 }
 
-.location{
-    display: flex;
-    align-items: center;
-    
-}
 
 .loc_icon{
-    padding-left: 10px;
-}
-
-.position{
-    text-align: right;
-    padding-bottom: 20px;
+    padding-left: 5px;
+    
 }
 
 
@@ -400,7 +397,7 @@ h1{
 .edu{
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    
 }
 
 .degree{
@@ -519,7 +516,6 @@ input[type=submit]:hover{
 }
 
 .contact_info{
-    cursor: pointer;
     display: flex;
     padding-bottom: 20px;
     gap: 10px;
@@ -564,7 +560,6 @@ footer h2{
 
 
 footer p{
-    display: flex;
     padding-bottom: 20px;
     color: var(--gray);
 }
@@ -602,7 +597,6 @@ footer li:hover{
 }
 
 footer .contact_info{
-    display: flex;
     padding-bottom: 5px;
     color: var(--gray);
 }

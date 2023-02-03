@@ -1,5 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector("#navlist");
+const screen = document.querySelector("screen")
+
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -15,3 +17,11 @@ function closeMenu(){
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+window.onclick = function(event){
+    if(event.target == screen){
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+}
+
