@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <script type="text/javascript" src="/js/stickynav.js" defer></script>
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script type="text/javascript" src="/js/stickynav.js"></script>
+    <script type="text/javascript" src="/js/hamburger.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <title>Resume</title>
 </head>
@@ -20,7 +22,11 @@
                 <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
                 <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
             </ul>
-            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>    
         </nav>     
     </header>
     <div id="container">
@@ -111,7 +117,7 @@
                 <br><br>
                 <div class="wexp2">
                     <div>
-                        <p class="post_title">Communications Management Intern</p>
+                        <p class="post_title">Communications Management</p>
                         <span class="company"><img src="/img/company_icon.png" alt="company icon">
                             <p class="comp_name">
                                 <a href="https://teensforfoodjustice.org/" target="_blank">
@@ -141,7 +147,7 @@
                             <span class="company"><img src="/img/university_icon.png" alt="institution icon">
                                 <p class="comp_name">
                                     <a href="https://www.citytech.cuny.edu/" target="_blank">
-                                        CUNY New York City College of Technology
+                                       CUNY New York City College of Technology
                                     </a>
                                 </p> 
                                 <img class="loc_icon" src="/img/location_icon.png" alt="location icon">
@@ -285,16 +291,19 @@
                     </div>
                    
                     <p>Connect</p>
-                    <span class="social_list">
-                        <a href="https://www.linkedin.com/in/isaiahcaniemeka/" target="_blank">
-                            <img class="social_icon" src="/img/github_icon_40.png">
-                        </a>                   
-                    </span>
-                    <span class="social_list">
-                        <a href="https://github.com/ianiemeka14" target="_blank">
-                            <img class="social_icon" src="/img/linkedin_icon.png">
-                        </a>                   
-                    </span>
+                    <div class="social_list">
+                        <span>
+                            <a href="https://github.com/ianiemeka14" target="_blank">
+                                <img class="social_icon" src="/img/github_icon_40.png">
+                            </a>                   
+                        </span>
+                        <span>
+                            <a href="https://www.linkedin.com/in/isaiahcaniemeka/"  target="_blank">
+                                <img class="social_icon" src="/img/linkedin_icon.png">
+                            </a>                   
+                        </span>
+                    </div>
+                   
                 </div>
                 <div>
                     <h2>Links</h2>

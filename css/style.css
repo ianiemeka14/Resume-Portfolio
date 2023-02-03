@@ -44,17 +44,19 @@ nav{
     padding: 4px;
     text-align: center;
     color: var(--white);
-    flex-basis: 50%;
 }
 
 
 #navlist{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #navlist li{
     display: inline-block;
-    padding: 0px 40px;
+    padding: 0px 30px;
     font-size: 18px;
     color: var(--white);
 }
@@ -72,6 +74,21 @@ nav{
     width: 100%;
     transition:  width .5s;
    
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white);
+
 }
 
 .sticky{
@@ -133,18 +150,14 @@ nav{
     gap: 35px;   
 }
 
-.animation_img{
-    flex-basis: 40%;
-}
+
 
 .intro_text{
    font-size: 40px;
    color: var(--white);
+   text-align: center;
 }
 
-.intro_text p{
-   display: block;
-}
 
 .intro_text span{
     font-weight: bold;
@@ -414,12 +427,12 @@ hr{
 
 .project1{
     position: relative;
-    width: 40%;
+    width: 100%;
 }
 
 .project2{
     position: relative;
-    width: 40%;
+    width: 100%;
 }
 
 
@@ -603,3 +616,5 @@ footer .contact_info:hover{
     color: var(--gray);
     padding-top: 70px;
 }
+
+
