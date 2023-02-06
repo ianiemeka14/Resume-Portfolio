@@ -61,7 +61,7 @@ nav{
     color: var(--white);
 }
 
-ul li a::after{
+#navlist li a::after{
     content: "";
     display: block;
     width: 0px;
@@ -70,7 +70,7 @@ ul li a::after{
     transition: width .5s;
 }
 
-ul li a:hover::after{
+#navlist li a:hover::after{
     width: 100%;
     transition:  width .5s;  
 }
@@ -521,6 +521,7 @@ input[type=submit]:hover{
     color: var(--gray)
 }
 
+
 .contact_info p:hover{
     color: var(--blue);
 }
@@ -564,7 +565,7 @@ footer p{
     color: var(--gray);
 }
 
-footer p:hover{
+footer .contact_info p:hover{
     color: var(--white);
 }
 
@@ -592,7 +593,7 @@ footer li{
     color: var(--gray);
 }
 
-footer li:hover{
+footer ul li a:hover{
     color: var(--white);
 }
 
