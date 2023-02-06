@@ -369,7 +369,7 @@
         color: var(--gray);  
     }
     
-    .contact_info:hover{
+    .contact_info p:hover{
         color: var(--blue);
     }
     
@@ -445,7 +445,7 @@
         color: var(--gray);
     }
     
-    footer li:hover{
+    footer ul li a:hover{
         color: var(--white);
     }
     
