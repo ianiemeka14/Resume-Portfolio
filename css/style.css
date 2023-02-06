@@ -61,7 +61,7 @@ nav{
     color: var(--white);
 }
 
-.nav_item::after{
+ul li a::after{
     content: "";
     display: block;
     width: 0px;
@@ -70,10 +70,9 @@ nav{
     transition: width .5s;
 }
 
-.nav_item:hover::after{
+ul li a:hover::after{
     width: 100%;
-    transition:  width .5s;
-   
+    transition:  width .5s;  
 }
 
 #hamburger{
@@ -522,7 +521,7 @@ input[type=submit]:hover{
     color: var(--gray)
 }
 
-.contact_info:hover{
+.contact_info p:hover{
     color: var(--blue);
 }
 
@@ -530,6 +529,7 @@ input[type=submit]:hover{
     font-size: 20px;
     padding-bottom: 20px;
 }
+
 
 footer{
     padding: 50px 0 50px 0;
