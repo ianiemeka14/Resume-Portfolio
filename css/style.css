@@ -602,9 +602,6 @@ footer .contact_info{
     color: var(--gray);
 }
 
-footer .contact_info:hover{
-    color: var(--white);
-}
 
 .copyright{
     text-align: center;
