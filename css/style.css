@@ -1,9 +1,5 @@
-:root{
-    --primary-font: 'Cabin', cursive;
-    --blue: #1f2833;
-    --white: #feffff;
-    --gray: #939393;
-}
+@import 'fonts.css';
+@import 'colors.css';
 
 
 *{
@@ -12,6 +8,7 @@
     box-sizing: border-box;
     font-family: var(--primary-font);
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -33,7 +30,7 @@ nav{
     position: fixed;
     transition: 0.4s;
     background-color: var(--blue);
-    overflow: hidden;
+   
     z-index: 99;
 }
 
@@ -154,6 +151,7 @@ nav{
 .intro_text{
    font-size: 40px;
    color: var(--white);
+   flex-direction: column;
    text-align: center;
 }
 
@@ -462,6 +460,7 @@ hr{
     opacity: 0.8;
 }
 
+
 .git_link{
     color: white;
     position: absolute;
@@ -472,6 +471,11 @@ hr{
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.github_logo{
+    width: 100%;
+}
+
 
 .form_container{
     padding-top: 90px;
@@ -553,6 +557,7 @@ footer h2{
     line-height: 1.8;
     text-align: left;
     font-weight: 400;
+
 }
 
 .about_summary{
